@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="bg-gray-900">
+        <div
+          class="container mx-auto px-4 py-2 md:flex md:justify-between md:items-center"
+        >
+          <div class="flex items-center justify-between">
+            <div class="text-xl text-white font-bold">Logo</div>
+            <button
+              class="md:hidden rounded-lg focus:outline-none focus:ring-2 focus:ring-white"
+              id="menu-toggle"
+            >
+              <svg
+                class="h-6 w-6 text-white"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="hidden md:flex flex-col md:flex-row" id="menu">
+            <a
+              href="#"
+              class="block mt-4 md:inline-block md:mt-0 text-white hover:text-gray-300 mr-4"
+              >Home</a
+            >
+            <a
+              href="#"
+              class="block mt-4 md:inline-block md:mt-0 text-white hover:text-gray-300 mr-4"
+              >About</a
+            >
+            <a
+              href="#"
+              class="block mt-4 md:inline-block md:mt-0 text-white hover:text-gray-300"
+              >Contact</a
+            >
+          </div>
+        </div>
+      </nav>
+      <div class="hero bg-gradient-to-r from-blue-500 to-purple-500"></div>
+      <div class="hero bg-gradient-to-r from-blue-500 to-purple-500">
+        <div class="container mx-auto py-20 text-center">
+          <h1
+            class="text-4xl font-bold text-white animate__animated animate__fadeInDown"
+          >
+            Welcome to My Portfolio
+          </h1>
+          <p class="text-lg text-white animate__animated animate__fadeInUp">
+            I'm a Front-End Web Developer
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <section class="bg-gray-100 py-10">
+      <div class="container mx-auto">
+        <h2
+          class="text-3xl font-bold text-center mb-5 animate__animated animate__fadeIn"
+        >
+          About Me
+        </h2>
+        <p class="text-lg text-center animate__animated animate__fadeIn">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+          consectetur nisi nunc, ut vulputate urna congue at.
+        </p>
+      </div>
+    </section>
+
+    <section class="py-10">
+      <div class="container mx-auto">
+        <h2
+          class="text-3xl font-bold text-center mb-5 animate__animated animate__fadeIn"
+        >
+          My Skills
+        </h2>
+        <div class="grid grid-cols-2 gap-4">
+          <div class="bg-white p-4 shadow-lg animate__animated animate__fadeIn">
+            <h3 class="text-xl font-bold mb-3">HTML</h3>
+            <p class="text-lg">Proficient in HTML5 and semantic markup.</p>
+          </div>
+          <div class="bg-white p-4 shadow-lg animate__animated animate__fadeIn">
+            <h3 class="text-xl font-bold mb-3">CSS</h3>
+            <p class="text-lg">
+              Skilled in CSS3, including responsive design and CSS frameworks.
+            </p>
+          </div>
+          <div class="bg-white p-4 shadow-lg animate__animated animate__fadeIn">
+            <h3 class="text-xl font-bold mb-3">JavaScript</h3>
+            <p class="text-lg">
+              Experience in JavaScript and modern JS frameworks like React.
+            </p>
+          </div>
+          <div class="bg-white p-4 shadow-lg animate__animated animate__fadeIn">
+            <h3 class="text-xl font-bold mb-3">UI/UX Design</h3>
+            <p class="text-lg">
+              Knowledge of UI/UX design principles and tools like Figma.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-gray-100 py-10">
+      <div class="container mx-auto">
+        <h2
+          class="text-3xl font-bold text-center mb-5 animate__animated animate__fadeIn"
+        >
+          My Projects
+        </h2>
+        <div class="grid grid-cols-3 gap-4">
+          <div class="bg-white p-4 shadow-lg animate__animated animate__fadeIn">
+            <h3 class="text-xl font-bold mb-3">Project 1</h3>
+            <p class="text-lg">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+          <div class="bg-white p-4 shadow-lg animate__animated animate__fadeIn">
+            <h3 class="text-xl font-bold mb-3">Project 2</h3>
+            <p class="text-lg">
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris.
+            </p>
+          </div>
+          <div class="bg-white p-4 shadow-lg animate__animated animate__fadeIn">
+            <h3 class="text-xl font-bold mb-3">Project 3</h3>
+            <p class="text-lg">
+              Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-10">
+      <div class="container mx-auto">
+        <h2
+          class="text-3xl font-bold text-center mb-5 animate__animated animate__fadeIn"
+        >
+          Contact Me
+        </h2>
+        <form class="max-w-md mx-auto">
+          <div class="mb-4">
+            <label class="block text-lg font-bold mb-2" for="name">Name</label>
+            <input
+              class="w-full p-2 border border-gray-400"
+              type="text"
+              id="name"
+              name="name"
+              required
+            />
+          </div>
+          <div class="mb-4">
+            <label class="block text-lg font-bold mb-2" for="email"
+              >Email</label
+            >
+            <input
+              class="w-full p-2 border border-gray-400"
+              type="email"
+              id="email"
+              name="email"
+              required
+            />
+          </div>
+          <div class="mb-4">
+            <label class="block text-lg font-bold mb-2" for="message"
+              >Message</label
+            >
+            <textarea
+              class="w-full p-2 border border-gray-400"
+              id="message"
+              name="message"
+              rows="4"
+              required
+            ></textarea>
+          </div>
+          <div>
+            <button
+              class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+              type="submit"
+            >
+              Send Message
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer class="bg-gray-900 py-5 text-white text-center">
+      <div class="container mx-auto">
+        <p>&copy; 2023 My Portfolio. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".animate__animated").addClass("animate__delay-1s");
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        $("#menu-toggle").click(function () {
+          $("#menu").slideToggle();
+        });
+      });
+    </script>
+  </body>
+</html>
